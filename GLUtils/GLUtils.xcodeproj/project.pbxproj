@@ -12,6 +12,7 @@
 		621CE39C288E803400BA15D9 /* GLUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621CE39B288E803400BA15D9 /* GLUtilsTests.swift */; };
 		621CE39D288E803400BA15D9 /* GLUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 621CE38F288E803300BA15D9 /* GLUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		621CE3EC288E809300BA15D9 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621CE3EB288E809300BA15D9 /* Log.swift */; };
+		6251D281288FDA4200920147 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6251D280288FDA4200920147 /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		621CE396288E803400BA15D9 /* GLUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GLUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		621CE39B288E803400BA15D9 /* GLUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLUtilsTests.swift; sourceTree = "<group>"; };
 		621CE3EB288E809300BA15D9 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		6251D280288FDA4200920147 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,9 +93,26 @@
 		621CE3EA288E808900BA15D9 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				621CE3EB288E809300BA15D9 /* Log.swift */,
+				6251D27F288FDA2B00920147 /* Extensions */,
+				6251D27E288FDA1600920147 /* Utils */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		6251D27E288FDA1600920147 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				621CE3EB288E809300BA15D9 /* Log.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6251D27F288FDA2B00920147 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6251D280288FDA4200920147 /* UIColor.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				621CE3EC288E809300BA15D9 /* Log.swift in Sources */,
+				6251D281288FDA4200920147 /* UIColor.swift in Sources */,
 				621CE391288E803300BA15D9 /* GLUtils.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
