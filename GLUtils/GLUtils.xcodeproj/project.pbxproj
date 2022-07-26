@@ -13,6 +13,8 @@
 		621CE39D288E803400BA15D9 /* GLUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 621CE38F288E803300BA15D9 /* GLUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		621CE3EC288E809300BA15D9 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621CE3EB288E809300BA15D9 /* Log.swift */; };
 		6251D281288FDA4200920147 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6251D280288FDA4200920147 /* UIColor.swift */; };
+		6251D283288FDCD600920147 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6251D282288FDCD600920147 /* String.swift */; };
+		6251D285288FE67600920147 /* SwizzleMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6251D284288FE67600920147 /* SwizzleMethods.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,8 @@
 		621CE39B288E803400BA15D9 /* GLUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLUtilsTests.swift; sourceTree = "<group>"; };
 		621CE3EB288E809300BA15D9 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		6251D280288FDA4200920147 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		6251D282288FDCD600920147 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		6251D284288FE67600920147 /* SwizzleMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwizzleMethods.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				621CE3EB288E809300BA15D9 /* Log.swift */,
+				6251D284288FE67600920147 /* SwizzleMethods.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				6251D280288FDA4200920147 /* UIColor.swift */,
+				6251D282288FDCD600920147 /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -226,7 +232,9 @@
 			files = (
 				621CE3EC288E809300BA15D9 /* Log.swift in Sources */,
 				6251D281288FDA4200920147 /* UIColor.swift in Sources */,
+				6251D283288FDCD600920147 /* String.swift in Sources */,
 				621CE391288E803300BA15D9 /* GLUtils.docc in Sources */,
+				6251D285288FE67600920147 /* SwizzleMethods.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

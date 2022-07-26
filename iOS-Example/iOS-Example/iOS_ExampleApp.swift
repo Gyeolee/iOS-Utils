@@ -6,10 +6,17 @@
 //
 
 import SwiftUI
+import GLUtils
 
 @main
 struct iOS_ExampleApp: App {
     let persistenceController = PersistenceController.shared
+    
+    init() {
+        if UIDevice.current.systemVersion.hasPrefix("14") {
+            NSString.swizzleReplacingCharacters()
+        }
+    }
 
     var body: some Scene {
         WindowGroup {
