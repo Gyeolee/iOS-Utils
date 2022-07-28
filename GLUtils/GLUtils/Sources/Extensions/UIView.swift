@@ -66,3 +66,56 @@ extension UIView {
         layer.shadowOpacity = shadowAlpha
     }
 }
+
+extension UIView {
+    
+    func border(rectEdges: [UIRectEdge],
+                color: UIColor,
+                width: CGFloat) {
+        rectEdges.forEach {
+            var sublayerFrame = CGRect()
+            
+            switch $0 {
+            case .top:
+                sublayerFrame = CGRect(
+                    x: 0,
+                    y: 0,
+                    width: frame.width,
+                    height: width
+                )
+                
+            case .bottom:
+                sublayerFrame = CGRect(
+                    x: 0,
+                    y: frame.height - width,
+                    width: frame.width,
+                    height: width
+                )
+                
+            case .left:
+                sublayerFrame = CGRect(
+                    x: 0,
+                    y: 0,
+                    width: width,
+                    height: frame.height
+                )
+                
+            case .right:
+                sublayerFrame = CGRect(
+                    x: frame.width - width,
+                    y: 0,
+                    width: width,
+                    height: frame.height
+                )
+                
+            default:
+                return
+            }
+            
+            let sublayer = CALayer()
+            sublayer.frame = sublayerFrame
+            sublayer.backgroundColor = color.cgColor
+            layer.addSublayer(sublayer)
+        }
+    }
+}
