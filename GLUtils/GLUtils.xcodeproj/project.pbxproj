@@ -18,6 +18,7 @@
 		6251D287288FE8BD00920147 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6251D286288FE8BD00920147 /* UIView.swift */; };
 		6251D289288FEAC800920147 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6251D288288FEAC800920147 /* UILabel.swift */; };
 		6251D28B288FEF2700920147 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6251D28A288FEF2700920147 /* Builder.swift */; };
+		62C2DFA4289387760031EAD7 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C2DFA3289387760031EAD7 /* Date.swift */; };
 		62F1684F2892331B009095AF /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F1684E2892331B009095AF /* Dictionary.swift */; };
 		62F1685128926150009095AF /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F1685028926150009095AF /* Int.swift */; };
 		62F1685328926E64009095AF /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F1685228926E64009095AF /* Codable.swift */; };
@@ -46,6 +47,7 @@
 		6251D286288FE8BD00920147 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		6251D288288FEAC800920147 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		6251D28A288FEF2700920147 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		62C2DFA3289387760031EAD7 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		62F1684E2892331B009095AF /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		62F1685028926150009095AF /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		62F1685228926E64009095AF /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				62F1685028926150009095AF /* Int.swift */,
 				62F1684E2892331B009095AF /* Dictionary.swift */,
 				62F1685228926E64009095AF /* Codable.swift */,
+				62C2DFA3289387760031EAD7 /* Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				621CE391288E803300BA15D9 /* GLUtils.docc in Sources */,
 				62F1684F2892331B009095AF /* Dictionary.swift in Sources */,
 				62F1685328926E64009095AF /* Codable.swift in Sources */,
+				62C2DFA4289387760031EAD7 /* Date.swift in Sources */,
 				6251D287288FE8BD00920147 /* UIView.swift in Sources */,
 				62F1685128926150009095AF /* Int.swift in Sources */,
 				6251D285288FE67600920147 /* SwizzleMethods.swift in Sources */,
