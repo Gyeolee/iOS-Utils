@@ -44,3 +44,56 @@ extension String {
         return test.evaluate(with: self) && (count >= minLength && count <= maxLength)
     }
 }
+
+
+/*
+ * Date
+ */
+
+let dateFormats = [
+    "yyyy-MM-dd'T'HH:mm:ss",
+    "yyyy-MM-dd'T'HH:mm:ss.SSS",
+    "yyyy-MM-dd",
+    "yyyyMMdd"
+]
+
+extension String {
+    
+    var date: Date {
+        let dateFormatter = DateFormatter()
+        for dateFormat in dateFormats {
+            dateFormatter.dateFormat = dateFormat
+            if let date = dateFormatter.date(from: self) {
+                return date
+            }
+        }
+        
+        return Date()
+    }
+    
+    func date(to format: String) -> Date {
+        let dateFormatter = DateFormatter()
+        for dateFormat in dateFormats {
+            dateFormatter.dateFormat = dateFormat
+            if let date = dateFormatter.date(from: self) {
+                let dateString = date.string(to: format)
+                return dateFormatter.date(from: dateString) ?? date
+            }
+        }
+        
+        return Date()
+    }
+    
+    func dateString(to format: String) -> String {
+        let dateFormatter = DateFormatter()
+        for dateFormat in dateFormats {
+            dateFormatter.dateFormat = dateFormat
+            if let date = dateFormatter.date(from: self) {
+                dateFormatter.dateFormat = format
+                return dateFormatter.string(from: date)
+            }
+        }
+        
+        return ""
+    }
+}
