@@ -38,4 +38,17 @@ extension Encodable {
             $0 as? [String: Any]
         }
     }
+    
+    var prettyPrintedJSONString: String {
+        let encoder = JSONEncoder()
+        encoder.outputFormatting = .prettyPrinted
+        
+        guard let data = try? encoder.encode(self) else {
+            return ""
+        }
+        guard let jsonString = String(data: data, encoding: .utf8) else {
+            return ""
+        }
+        return jsonString
+    }
 }
